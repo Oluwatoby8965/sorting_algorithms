@@ -5,11 +5,11 @@ void siftDown(int *, size_t, size_t, size_t);
 void heap_sort(int *, size_t);
 
 /**
-* buildMaxHeap - take unsorted array and convert to complete
-* binary tree with heap property.
-* @array: array to convert
-* @size: size of array
-*/
+ * buildMaxHeap - take unsorted array and convert to complete
+ * binary tree with heap property.
+ * @array: array to convert
+ * @size: size of array
+ */
 void buildMaxHeap(int *array, size_t size)
 {
 	size_t root;
@@ -24,12 +24,12 @@ void buildMaxHeap(int *array, size_t size)
 }
 
 /**
-* siftDown - move root at index `root` in `heap` into correct position
-* @heap: heap structure to sift
-* @root: index of root to sift
-* @end: last index to consider
-* @size: size of heap
-*/
+ * siftDown - move root at index `root` in `heap` into correct position
+ * @heap: heap structure to sift
+ * @root: index of root to sift
+ * @end: last index to consider
+ * @size: size of heap
+ */
 void siftDown(int *heap, size_t root, size_t end, size_t size)
 {
 	int tmp;
@@ -54,10 +54,10 @@ void siftDown(int *heap, size_t root, size_t end, size_t size)
 }
 
 /**
-* heap_sort - implementation of heap sort algorithm on `array`
-* @array: array to sort
-* @size: size of `array`
-*/
+ * heap_sort - implementation of heap sort algorithm on `array`
+ * @array: array to sort
+ * @size: size of `array`
+ */
 void heap_sort(int *array, size_t size)
 {
 	size_t i;

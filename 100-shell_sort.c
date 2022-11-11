@@ -1,10 +1,10 @@
 #include "sort.h"
 
 /**
-* shell_sort - shell sorting algorithm using insertion sort on subarrays
-* @array: array to sort
-* @size: size of array
-*/
+ * shell_sort - shell sorting algorithm using insertion sort on subarrays
+ * @array: array to sort
+ * @size: size of array
+ */
 void shell_sort(int *array, size_t size)
 {
 	size_t gap, i, j, k;

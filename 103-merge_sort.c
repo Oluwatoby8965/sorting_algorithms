@@ -7,10 +7,10 @@ void _merge(int *array, int *output, size_t left, size_t mid, size_t right);
 void copy_output_to_input(int *array, int *output, size_t size);
 
 /**
-* merge_sort - recursive merge sort algorithm using top down merge strategy
-* @array: array to sort
-* @size: size of array
-*/
+ * merge_sort - recursive merge sort algorithm using top down merge strategy
+ * @array: array to sort
+ * @size: size of array
+ */
 void merge_sort(int *array, size_t size)
 {
 	int *output;
@@ -26,12 +26,12 @@ void merge_sort(int *array, size_t size)
 }
 
 /**
-* _merge_split - recursively called subroutine to split array and merge after
-* @output: temporary array to store intermediate sorted subarrays
-* @array: unsorted input array
-* @left: left index of subarray
-* @right: right index of subarray (non-inclusive)
-*/
+ * _merge_split - recursively called subroutine to split array and merge after
+ * @output: temporary array to store intermediate sorted subarrays
+ * @array: unsorted input array
+ * @left: left index of subarray
+ * @right: right index of subarray (non-inclusive)
+ */
 void _merge_split(int *output, int *array, size_t left, size_t right)
 {
 	size_t mid;
@@ -45,13 +45,13 @@ void _merge_split(int *output, int *array, size_t left, size_t right)
 }
 
 /**
-* _merge - merge subroutine to merge sorted subarrays
-* @array: input array
-* @output: temporary array to store intermediate sorted subarrays
-* @left: left index of subarray
-* @mid: midpoint between two subarrays
-* @right: right endpoint of subarrays (non-inclusive)
-*/
+ * _merge - merge subroutine to merge sorted subarrays
+ * @array: input array
+ * @output: temporary array to store intermediate sorted subarrays
+ * @left: left index of subarray
+ * @mid: midpoint between two subarrays
+ * @right: right endpoint of subarrays (non-inclusive)
+ */
 void _merge(int *array, int *output, size_t left, size_t mid, size_t right)
 {
 	size_t i, j, k, n = right - left;
@@ -81,11 +81,11 @@ void _merge(int *array, int *output, size_t left, size_t mid, size_t right)
 }
 
 /**
-* copy_output_to_input - copy `output` to `array` of length `size`
-* @array: input array
-* @output: array to copy from
-* @size: size of `array`
-*/
+ * copy_output_to_input - copy `output` to `array` of length `size`
+ * @array: input array
+ * @output: array to copy from
+ * @size: size of `array`
+ */
 void copy_output_to_input(int *array, int *output, size_t size)
 {
 	size_t i;

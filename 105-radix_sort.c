@@ -3,13 +3,13 @@
 #define NUMDIGIT 10
 
 /**
-* findMaxPower10 - find the max value in `array` and return the number
-* of significant digits in base 10
-* @array: array to check
-* @size: size of `array`
-*
-* Return: number of significant digits of max value in `array`
-*/
+ * findMaxPower10 - find the max value in `array` and return the number
+ * of significant digits in base 10
+ * @array: array to check
+ * @size: size of `array`
+ *
+ * Return: number of significant digits of max value in `array`
+ */
 size_t findMaxPower10(int *array, size_t size)
 {
 	size_t i, base10;
@@ -24,10 +24,10 @@ size_t findMaxPower10(int *array, size_t size)
 }
 
 /**
-* radix_sort - sorts data using Radix and prints it out
-* @array: data to be sorted
-* @size: size of the array
-*/
+ * radix_sort - sorts data using Radix and prints it out
+ * @array: data to be sorted
+ * @size: size of the array
+ */
 void radix_sort(int *array, size_t size)
 {
 	size_t digit, divisor, base10, i, oldCount, z, count[NUMDIGIT];

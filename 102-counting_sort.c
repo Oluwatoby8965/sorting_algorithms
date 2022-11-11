@@ -5,12 +5,12 @@
 void print_array_long(const size_t *, size_t);
 
 /**
-* counting_sort - Counting sort
-* @array: array to evaluate
-* @size: size of array
-* Return: None
-* Note: Most of it works, except for the last count[10]
-*/
+ * counting_sort - Counting sort
+ * @array: array to evaluate
+ * @size: size of array
+ * Return: None
+ * Note: Most of it works, except for the last count[10]
+ */
 void counting_sort(int *array, size_t size)
 {
 	int max = 0, *output;
@@ -56,10 +56,10 @@ void counting_sort(int *array, size_t size)
 }
 
 /**
-* print_array_long - prints array of size_t (unsigned long)
-* @arr: array to print
-* @size: size of `arr`
-*/
+ * print_array_long - prints array of size_t (unsigned long)
+ * @arr: array to print
+ * @size: size of `arr`
+ */
 void print_array_long(const size_t *arr, size_t size)
 {
 	size_t i;

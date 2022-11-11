@@ -7,13 +7,13 @@ int valtoi(const char *value);
 void sort_deck(deck_node_t **deck);
 
 /**
-* compare - comparison function for playing cards for use with qsort
-* @l: left card
-* @r: right card
-*
-* Return: 1 if `l` is greater than `r`, -1 if `r` is greater than `l`,
-* 0 if they are equal.
-*/
+ * compare - comparison function for playing cards for use with qsort
+ * @l: left card
+ * @r: right card
+ *
+ * Return: 1 if `l` is greater than `r`, -1 if `r` is greater than `l`,
+ * 0 if they are equal.
+ */
 int compare(const void *l, const void *r)
 {
 	const deck_node_t *left = *(const deck_node_t **)l;
@@ -34,11 +34,11 @@ int compare(const void *l, const void *r)
 }
 
 /**
-* valtoi - convert card value to integer for comparison
-* @value: string representation of card value
-*
-* Return: integer representation of `value`.
-*/
+ * valtoi - convert card value to integer for comparison
+ * @value: string representation of card value
+ *
+ * Return: integer representation of `value`.
+ */
 int valtoi(const char *value)
 {
 	if (strcmp(value, "Ace") == 0)
@@ -53,9 +53,9 @@ int valtoi(const char *value)
 }
 
 /**
- sort_deck - function to sort deck of cards in order of suit and value
-* @deck: pointer to head of linked list of 52 card deck
-*/
+ * sort_deck - function to sort deck of cards in order of suit and value
+ * @deck: pointer to head of linked list of 52 card deck
+ */
 void sort_deck(deck_node_t **deck)
 {
 	deck_node_t *deck_array[54], *head;
